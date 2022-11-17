@@ -37,7 +37,7 @@ let today=new Date().toISOString().split("T")[0];
     // FILL YOUR CODE HERE
     return list
     .map((todo)=>{
-       dStatus=todo.completed ? "[X]" :"[ ]";
+       dStatus=todo.completed ? "[x]" :"[ ]";
        dDate=todo.dueDate==today?"":todo.dueDate;
     // return OUTPUT_STRING
     return `${dStatus} ${todo.title} ${dDate}`;
